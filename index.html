@@ -4,29 +4,91 @@
 <head>
   <title>Doaa Shafik</title>
   <link rel="stylesheet" href="./css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header text-center">
+    <div id="burger-menu">
+      <span></span>
+    </div>
+    <div>
+      <h1 class="mb-0">Doaa Shafik</h1>
+      <p class="position">Senior Front End Engineer at
+        <a style="color:#191924" href="https://squadio.com/">Squadio</a>
+      </p>
+    </div>
   </header>
-  <ul class="tabs">
-    <li>
-      <a href="about">About Me</a>
-    </li>
-    <li>
-      <a href="skills">Skills</a>
-    </li>
-    <li>
-      <a href="projects">Projects</a>
-    </li>
-    <li>
-      <a href="blog">Blog</a>
-    </li>
-  </ul>
-  <section class="about" id="about"></section>
-  <section class="skills" id="skills"></section>
-  <section class="projects" id="projects"></section>
-  <section class="blog" id="blog"></section>
+  <div class="tabs-container" onclick="">
+    <div id="menu">
+      <ul class="tabs">
+        <li>
+          <button class="tab-link active" data-id="about">About</button>
+        </li>
+        <li>
+          <button class="tab-link" data-id="projects">Projects</button>
+        </li>
+        <li>
+          <button class="tab-link" data-id="skills">Skills</button>
+        </li>
+        <li>
+          <button class="tab-link" data-id="contact">Contact</button>
+        </li>
+      </ul>
+    </div>
+    <section class="content active" id="about">
+      <div class="d-flex justify-content-center">
+        <section>
+          <p>I'm a Frontend Engineer with +3 years of experience in web development.
+          </p>
+          <p class="about-desc">Skilled in React, Vue, Angular, and server-side rendering.
+          </p>
+          <p>I've built a lot of websites for people / companies in Saudi Arabia & Egypt</p>
+        </section>
+      </div>
+    </section>
+    <section class="content" id="projects">
+      My Projects
+    </section>
+    <section class="content" id="skills">
+     <div class="d-flex justify-content-center align-items-center">
+      <img class="skills-image_typescript" src="./assets/images/typescript.png" />
+      <img class="skills-image" src="./assets/images/docker.png" />
+      <img class="skills-image" src="./assets/images/git.png" />
+      <img class="skills-image" src="./assets/images/cloud.png" />
+      <img class="skills-image" src="./assets/images/angular.svg" />
+      <img class="skills-image" src="./assets/images/atom.png" />
+      <img class="skills-image" src="./assets/images/vue.svg" />
+      <img class="skills-image" src="./assets/images/graphql.svg" />
+     </div>
+    </section>
+    <section class="content" id="contact">
+      <ul class="contact-list">
+        <li>
+          <a href="https://github.com/doaashafik"><img class="contact-image" src="./assets/images/github.png" /></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/doaashafik"><img class="contact-image"
+              src="./assets/images/linkedin.png" /></a>
+        </li>
+      </ul>
+      <section class="contact-info d-flex align-items-center">
+        <p class="d-flex align-items-center">
+          <img class="contact-image" src="./assets/images/email.png" />doaa.shafik1@gmail.com
+        </p>
+        <p class="d-flex align-items-center">
+          <img class="contact-image" src="./assets/images/phone.png" /> +20 01002362594
+        </p>
+        <p class="d-flex align-items-center">
+          <img class="contact-image" src="./assets/images/address.png" />Egypt, Alexandria
+        </p>
+      </section>
+    </section>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
