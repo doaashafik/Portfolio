@@ -1,31 +1,31 @@
-const tabs = document.querySelector(".tabs-container");
-const tabButton = document.querySelectorAll(".tab-link");
-const contents = document.querySelectorAll(".content");
+let modal = document.getElementById("hrcom-project");
+let btn = document.getElementById("hrcom");
+let span = document.getElementById("close-hrcom");
 
-/* Burger Menu */
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("menu");
-burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
-
-/* Tabs Action */
-tabs.onclick = (e) => {
-  const id = e.target.dataset.id;
-  if (id) {
-    tabButton.forEach((btn) => {
-      btn.classList.remove("active");
-    });
-    e.target.classList.add("active");
-
-    contents.forEach((content) => {
-      content.classList.remove("active");
-    });
-    const element = document.getElementById(id);
-    element.classList.add("active");
-    console.log('ff')
-    burgerMenu.classList.toggle("close");
-    overlay.classList.toggle("overlay");
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-};
+}
+
+let btn_ar = document.getElementById("arabian");
+let modal_ar = document.getElementById("arabian-project");
+let span_ar = document.getElementById("close-arabian");
+
+btn_ar.onclick = function() {
+  modal_ar.style.display = "block";
+}
+span_ar.onclick = function() {
+  modal_ar.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal_ar.style.display = "none";
+  }
+}
