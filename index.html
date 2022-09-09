@@ -6,8 +6,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 </head>
 
@@ -59,7 +58,7 @@
       </section>
     </section>
     <div class="d-flex dash"></div>
-    <section id="projects">
+    <section>
       <h2>Top Projects</h2>
       <section class="projects">
         <div id="hrcom" class="hide-underline project-link">
@@ -90,60 +89,64 @@
     <div class="d-flex dash"></div>
     <!-- HRCOM Modal content -->
     <section class="project modal" id="hrcom-project">
-    <div class="modal-content">
-      <span id="close-hrcom" class="close">&times;</span>
+      <div class="modal-content">
+        <span id="close-hrcom" class="close">&times;</span>
         <section class="project-details">
-          <h3 class>HRCOM Startup</h3>
+          <h3 class>
+          <span class="d-flex p-title">HRCOM Startup 
+            <a href="https://hrcom.io"><img src="./assets/images/website.png"></a>
+          </span>
+          <span class="time">11/2020 - 9/2022</span>
+          </h3>
           <p>
             HRcom is the digital system that manages Hiring Process and connects Jobseekers with Business owners
             through an ATS system with the latest Recruitment solutions to meet strategic objectives.
           </p>
           <p><span class="dots"></span><strong>Portals: </strong>
             Company Dashboard - HRCOM Dshboard -
-            <a href="https://jobseeker.hrcom.io/" class="decorate-link">JobSeeker</a>-
+            <a href="https://jobseeker.hrcom.io/" target="_blank" class="hide-underline">JobSeeker</a>-
             CompanyPortal
             .</p>
           <p><span class="dots"></span>HRCOM has +30,000 candidates.</p>
           <p><span class="dots"></span>HRCOM has an important client.
-            <a href="https://www.adaa.gov.sa/ar/" class="decorate-link">Adaa</a>
+            <a href="https://www.adaa.gov.sa/ar/" target="_blank" class="hide-underline">Adaa</a>
             and successfully manages the
             App for them.</p>
           <p><span class="dots"></span>I contributed for two years and manages all portals of the HRCOM App.</p>
-          <p class><span class="dots"></span><strong>Website: </strong> <a href="https://hrcom.io">HRCOM</a></p>
-          <p class><span class="dots"></span><strong>Contibution duration:</strong> 11/2020 - 9/2022.</p>
           <p class><span class="dots"></span><strong>Technologies:</strong> Material UI - React - Redux - Redux-saga -
             Git -
             Typescript - react-intl.
           </p>
         </section>
-      </section>
-      <!-- The Arabian Modal -->
-      <section class="project modal" id="arabian-project">
+    </section>
+    <!-- The Arabian Modal -->
+    <section class="project modal" id="arabian-project">
       <div class="modal-content">
         <span id="close-arabian" class="close">&times;</span>
-          <section class="project-details">
-            <h3 class>Arabian Drive</h3>
-            <p>Arabian Drive is an Arabic media group founded in 2008 by automotive expert
-              Hasan Kutbi, The Arabian Drive Group has embarked on the automotive world through its Arabic channel on
-              the most
-              popular cars in the field of automotive and transportation vehicles.</p>
-            <p><span class="dots"></span><strong>Portals: </strong>
-              Dashboard - Website.</p>
-            <p><span class="dots"></span>I contributed for one year and managed the portal features with the team
-              lead.</p>
-            <p class><span class="dots"></span><strong>Website: </strong> 
-              <a href="https://arabiandrive.com/ar">Arabian Drive
-              </a>
-            </p>
-            <p class><span class="dots"></span><strong>Contibution duration:</strong> 1/2019 - 1/2020.</p>
-            <p class><span class="dots"></span><strong>Technologies:</strong>
-              react-emotions - serverSideRendering -
-              React - Redux - Git - Graphql - react-i18next.
-            </p>
-          </section>
+        <section class="project-details">
+          <h3 class>
+            <span class="d-flex p-title">Arabian Drive
+              <a href="https://arabiandrive.com/ar"><img src="./assets/images/website.png"></a>
+            </span>
+            <span class="time">1/2019 - 1/2020</span>
+          </h3>
+          <p>Arabian Drive is an Arabic media group founded in 2008 by automotive expert
+            Hasan Kutbi, The Arabian Drive Group has embarked on the automotive world through its Arabic channel on
+            the most
+            popular cars in the field of automotive and transportation vehicles.</p>
+          <p><span class="dots"></span><strong>Portals: </strong>
+            Dashboard - Website.</p>
+          <p><span class="dots"></span>I contributed for one year and managed the portal features with the team
+            lead.</p>
+          <p class><span class="dots"></span><strong>Technologies:</strong>
+            react-emotions - serverSideRendering -
+            React - Redux - Git - Graphql - react-i18next.
+          </p>
+        </section>
       </div>
     </section>
     </div>
 </body>
 <script src="./js/script.js"></script>
+
 </html>

@@ -44,8 +44,18 @@ h2 {
   color: #6c5f5f;
 }
 h2 {
-  text-decoration: line-through;
   margin: 0;
+  position: relative;
+}
+h2::after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  margin-inline-start: 15px;
+  width: 8
+  0px;
+  height: 2px;
+  background-color: #6c5f5f;
 }
 h3 {
   margin-top: 0;
@@ -55,7 +65,7 @@ img {
 }
 /* Grid */
 .grid {
-  padding-inline-start: 40px;
+  padding: 0 20px;
 }
 .d-flex {
   display: flex;
@@ -117,7 +127,8 @@ img {
   display: flex;
 }
 .skills-content p,
-#about p {
+#about p,
+header p {
   padding-inline-start: 15px;
 }
 .dots {
@@ -172,7 +183,7 @@ img {
   text-decoration: underline;
 }
 .project p {
-  line-height: 1.8em;
+  line-height: 1.8rem;
   margin: 5px 0;
 }
 
@@ -213,4 +224,22 @@ img {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+.time {
+   
+  color: #565656;
+  font-size: 12px;
+  display: block;
+}
+.p-title a {
+  padding-inline-start: 10px;
+}
+@media(max-width: 992px) {
+  .projects {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .img-wrapper {
+    max-width: 100%;
+  }
 }
